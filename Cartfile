@@ -1,3 +1,4 @@
-github "uber/RIBs" ~> 0.9
-github "https://github.com/uber/needle.git" ~> 0.13
+gitHub "ReactiveX/RxSwift" ~> 6.5.0
+github "uber/RIBs" ~> 0.13.0
+github "https://github.com/uber/needle.git" ~> 0.18.1
 # github "brentleyjones/needle" "fix-generator-for-swift-5.2"

@@ -13,6 +13,6 @@ target 'Example-Buck-RIBS-Needle' do
   pod 'Nimble', '8.0.2'
   pod 'NeedleFoundation', :podspec => './LocalPods/NeedleFoundation/NeedleFoundation.podspec'
   pod 'RIBs', :podspec => './LocalPods/RIBs/RIBs.podspec'
-  pod 'RxCocoa', '5.0.1'
   pod 'SnapKit', '~> 4.0.0'
+  pod 'RxCocoa', '~> 6.5.0'
 end
