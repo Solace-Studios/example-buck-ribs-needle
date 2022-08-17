@@ -1,0 +1,37 @@
+load("//Config:buck_rule_macros.bzl", "apple_lib")
+
+prebuilt_apple_framework(
+    name = "RIBs",
+    framework = "Build/iOS/Static/RIBs.framework",
+    preferred_linkage = "shared",
+    visibility = ["PUBLIC"],
+)
+
+prebuilt_apple_framework(
+    name = "RxSwift",
+    framework = "Build/iOS/Static/RxSwift.framework",
+    preferred_linkage = "shared",
+    visibility = ["PUBLIC"],
+)
+
+prebuilt_apple_framework(
+    name = "RxCocoa",
+    framework = "Build/iOS/Static/RxCocoa.framework",
+    preferred_linkage = "shared",
+    visibility = ["PUBLIC"],
+)
+
+prebuilt_apple_framework(
+    name = "NeedleFoundation",
+    framework = "Build/iOS/Static/NeedleFoundation.framework",
+    preferred_linkage = "shared",
+    visibility = ["PUBLIC"],
+)
+
+# Every BUCK file needs at least one library with source.
+apple_lib(
+    name = "CarthageProjectGeneratorHack",
+    srcs = glob([
+        "BuckSupportFiles/**/*.swift",
+    ]),
+)

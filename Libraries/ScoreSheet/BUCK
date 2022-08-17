@@ -1,0 +1,15 @@
+load("//Config:configs.bzl", "app_binary_configs", "info_plist_substitutions")
+load("//Config:buck_rule_macros.bzl", "first_party_library", "buildconfig_gen")
+
+first_party_library(
+    name = "ScoreSheet",
+    bundle_identifier = "com.loggedin.plugin.ScoreSheet",
+    version = "1.0.0",
+    deps = [
+        "//Libraries/Models:Models",
+        "//Libraries/LoggedInPlugin:LoggedInPlugin",
+        "//Pods:RxCocoa",
+        "//Pods:RxSwift",
+        "//Pods:SnapKit",
+    ],
+)

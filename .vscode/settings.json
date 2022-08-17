@@ -1,0 +1,9 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "buck.projectConfig": {
+        "projectPath": "/Users/michaelmanahan/Local_Repos/example-buck-ribs-needle",
+        "flavor": [],
+        "target": "",
+        "platform": "linux-x86_64"
+    }
+}
