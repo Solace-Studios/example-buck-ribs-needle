@@ -102,4 +102,8 @@ fastlane/test_output
 
 iOSInjectionProject/
 
+#for those using vscode for git
+.vscode
+
+#not sure what this generated file is, but don't need it
 .DS_Store
